@@ -102,41 +102,41 @@ Class|Type|Link|Comment
 0|7 - 16||Driver positions and info
 1|7||Driver enters or leaves their garage
 1|10||Number of lights shown
-1|23||Countdown to race start
-2|5||Penalty given to a driver
-2|7||Driver served a penalty
-2|8||Admin removed a penalty from a driver
-2|19||Session type (race, qualifying, etc)
-3|6||Checkpoint event - usually when a sector is completed
-3|5||Rank event
-3|15||Garage related event
-3|16||Driver DNF
-3|18||Driver DSQ
-3|19||Driver Kicked
-3|48||Driver Overtake
+1|23|[Link](countdown.md)|Countdown to race start
+2|5|[Link](penalty_given.md)|Penalty given to a driver
+2|7|[Link](penalty_served.md)|Driver served a penalty
+2|8|[Link](penalty_removed.md)|Admin removed a penalty from a driver
+2|19|[Link](session_type.md)|Session type (race, qualifying, etc)
+3|6|[Link](checkpoint.md)|Checkpoint event - usually when a sector is completed
+3|5|[Link](rank_event.md)|Rank event
+3|15|[Link](garage_event.md)|Garage related event
+3|16|[Link](dnf.md)|Driver DNF
+3|18|[Link](dsq.md)|Driver DSQ
+3|19|[Link](kicked.md)|Driver Kicked
+3|48|[Link](overtake.md)|Driver Overtake
 
 The next set of classes/types is what I've observed, but haven't figured out their meanings (partially or completely).
 
 Class|Type|Link|Comment
 -|-|-|-
-0|1||
-0|3||
-0|4||
-0|5||Related to engine damage events
-1|4||
-1|6||
-1|11||Same as 2-17 I think
-1|26||
-2|9||
-2|15||
-2|17||Incidents - collisions with cars, signs, posts, wheels, etc
-2|23||Engine damage events
-2|26||Suspension damage events
-2|28||
-2|29||Sector 1 events
-2|30||Sector 2 events
-2|31||Sector 3 events
-3|8||
-3|9||Countdown about to start
-3|22||Formation lap
-3|49||Pit events
+0|1|[Link](0_1.md)|
+0|3|[Link](0_3.md)|
+0|4|[Link](0_4.md)|
+0|5|[Link](0_5.md)|Related to engine damage events
+1|4|[Link](1_4.md)|
+1|6|[Link](1_6.md)|
+1|11|[Link](1_11.md)|Same as 2-17 I think
+1|26|[Link](1_26.md)|
+2|9|[Link](2_9.md)|
+2|15|[Link](2_15.md)|
+2|17|[Link](incidents.md)|Incidents - collisions with cars, signs, posts, wheels, etc
+2|23|[Link](engine_damage.md)|Engine damage events
+2|26|[Link](suspension_damage.md)|Suspension damage events
+2|28|[Link](2_28.md)|
+2|29|[Link](sector_1.md)|Sector 1 events
+2|30|[Link](sector_2.md)|Sector 2 events
+2|31|[Link](sector_3.md)|Sector 3 events
+3|8|[Link](3_8.md)|
+3|9|[Link](countdown_start.md)|Countdown about to start
+3|22|[Link](formation.md)|Formation lap
+3|49|[Link](pitlane.md)|Pit events
