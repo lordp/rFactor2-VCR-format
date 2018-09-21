@@ -63,8 +63,34 @@ Vehicle version length|2|Integer|
 Vehicle version|variable|String|eg 1.07
 Vehicle ID length|1|Integer|
 Vehicle ID|variable|String|64 character string
-Vehicle filename|variable|String|Read until \x00
-Unknown|64|Unknown|Unknown chunk of data
+Vehicle filename|32|String|Read up to the first \x00 character, discard the rest
+Unknown|48|Unknown|Unknown chunk of data
 Entry time|4|Float|
 Exit time|4|Float|
 
+### Events and Time Slices
+
+The rest of the file describes the replay in 'slices' of time. These are variable length blocks of data, each one with a header that, when decoded, describes the content and size of the slice/block.
+
+Description|Length|Type|Comment
+-|-|-|-
+Slice count|4|Integer|
+Total event count|4|Integer|The total number of events in the replay
+Start time|4|Float|
+End time|4|Float|
+
+Each time slice uses the following structure.
+
+Description|Length|Type|Comment
+-|-|-|-
+Slice time|4|Float|
+Event count|4|Unsigned Integer|Number of events in this slice
+
+Each slice then has a number of events of variable size, with an unsigned integer header at the start that describes the content and size. This header is decoded as follows:
+
+```python
+event_size = (header >> 8) & 0x1ff
+event_class = (header >> 29)
+event_type = (header >> 17) & 0x3f
+event_driver = header & 0xff
+```
