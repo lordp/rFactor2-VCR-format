@@ -139,4 +139,5 @@ Class|Type|Link|Comment
 2|31|[Link](sector_3.md)|Sector 3 events
 3|8|[Link](3_8.md)|
 3|22|[Link](formation.md)|Formation lap
+3|38|[Link](3_38.md)|
 3|49|[Link](pitlane.md)|Pit events
