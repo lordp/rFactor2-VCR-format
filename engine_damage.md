@@ -4,4 +4,4 @@
 
 Size|Type|Comment
 -|-|-
-4|Unknown|
+4|Unknown|Shown in log file as '[Driver] reports new engine damage'
