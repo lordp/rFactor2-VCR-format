@@ -1,3 +1,5 @@
+[Back to index](index.md)
+
 ### Lights
 
 Size|Type|Comment
