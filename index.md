@@ -99,9 +99,9 @@ What follows is what Gerald and I have figured out of the format, organised into
 
 Class|Type|Link|Comment
 -|-|-|-
-0|7 - 16||Driver positions and info
-1|7||Driver enters or leaves their garage
-1|10||Number of lights shown
+0|7 - 16|[Link](driver.md)|Driver positions and info
+1|7|[Link](garage.md)|Driver enters or leaves their garage
+1|10|[Link](lights.md)|Number of lights shown
 1|23|[Link](countdown.md)|Countdown to race start
 2|5|[Link](penalty_given.md)|Penalty given to a driver
 2|7|[Link](penalty_served.md)|Driver served a penalty
