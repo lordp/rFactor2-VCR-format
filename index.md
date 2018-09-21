@@ -94,3 +94,23 @@ event_class = (header >> 29)
 event_type = (header >> 17) & 0x3f
 event_driver = header & 0xff
 ```
+
+What follows is what Gerald and I have figured out of the format, organised into class and type.
+
+Class|Type|Comment
+-|-|-|-
+0|7 - 16|Driver positions and info
+1|7|Driver enters or leaves their garage
+1|10|Number of lights shown
+1|23|Countdown to race start
+2|5|Penalty given to a driver
+2|7|Driver served a penalty
+2|8|Admin removed a penalty from a driver
+2|19|Session type (race, qualifying, etc)
+3|6|Checkpoint event - usually when a sector is completed
+3|5|Rank event
+3|15|Garage related event
+3|16|Driver DNF
+3|18|Driver DSQ
+3|19|Driver Kicked
+3|48|Driver Overtake
