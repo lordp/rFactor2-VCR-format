@@ -98,7 +98,7 @@ event_driver = header & 0xff
 What follows is what Gerald and I have figured out of the format, organised into class and type.
 
 Class|Type|Comment
--|-|-|-
+-|-|-
 0|7 - 16|Driver positions and info
 1|7|Driver enters or leaves their garage
 1|10|Number of lights shown
