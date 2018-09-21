@@ -35,9 +35,36 @@ Mod UID|variable|String|UID of the mod (MD5 or similar hash)
 Track path length|2|Integer|
 Track path|variable|String|Full path to the track file
 Unknown|1|Integer|
-Session Info|1|Integer
+Session Info|1|Integer|
 Unknwon|67|Bytes|Unknown chunk of data
 
 **Session Info**
 * Session Type = session_info & 0xF
 * Private Session = session_info >> 7 & 1
+
+### Driver list
+
+Description|Length|Type|Comment
+-|-|-|-
+Driver count|1|Integer|
+
+For each driver, the following structure applies
+
+Description|Length|Type|Comment
+-|-|-|-
+Number|1|Integer|Driver number, used later in the file
+Name length|1|Integer|
+Name|variable|String|
+Co-driver name length|1|Integer|
+Co-driver name|variable|String|
+Vehicle name length|2|Integer|
+Vehicle name|variable|String|eg FSR2018
+Vehicle version length|2|Integer|
+Vehicle version|variable|String|eg 1.07
+Vehicle ID length|1|Integer|
+Vehicle ID|variable|String|64 character string
+Vehicle filename|variable|String|Read until \x00
+Unknown|64|Unknown|Unknown chunk of data
+Entry time|4|Float|
+Exit time|4|Float|
+
