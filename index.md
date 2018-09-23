@@ -110,9 +110,6 @@ Class|Type|Link|Comment
 3|6|[Link](checkpoint.md)|Checkpoint event - usually when a sector is completed
 3|5|[Link](rank_event.md)|Rank event
 3|9|[Link](countdown_period.md)|When the countdown begins and ends
-3|16|[Link](dnf.md)|Driver DNF
-3|18|[Link](dsq.md)|Driver DSQ
-3|19|[Link](kicked.md)|Driver Kicked
 3|48|[Link](overtake.md)|Driver Overtake
 5|2|[Link](pit_events.md)|Pit lane/garage events
 
@@ -140,6 +137,9 @@ Class|Type|Link|Comment
 2|31|[Link](sector_3.md)|Sector 3 events
 3|8|[Link](3_8.md)|
 3|15|[Link](return_to_garage.md)|Driver pressed ESC
+3|16|[Link](3_16.md)|
+3|18|[Link](3_18.md)|
+3|19|[Link](3_19.md)|
 3|22|[Link](formation.md)|Formation lap
 3|38|[Link](3_38.md)|
 3|49|[Link](pitlane.md)|Pit events
