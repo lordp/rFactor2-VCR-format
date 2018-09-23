@@ -4,6 +4,8 @@ This is an attempt to document the file format of the rFactor 2 replay files (.v
 
 All of the information is based on version 1.08 of the replay file.
 
+[This](vcr_read.py) is a python script that I'm using to scan and document the format. Yes, it's awful, but it does the job.
+
 ### Header
 
 Description|Length|Type|Comment
