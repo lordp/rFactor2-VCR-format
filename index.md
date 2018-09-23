@@ -115,6 +115,7 @@ Class|Type|Link|Comment
 3|18|[Link](dsq.md)|Driver DSQ
 3|19|[Link](kicked.md)|Driver Kicked
 3|48|[Link](overtake.md)|Driver Overtake
+5|2|[Link](pit_events.md)|Pit lane/garage events
 
 The next set of classes/types is what I've observed, but haven't figured out their meanings (partially or completely).
 
@@ -142,5 +143,4 @@ Class|Type|Link|Comment
 3|22|[Link](formation.md)|Formation lap
 3|38|[Link](3_38.md)|
 3|49|[Link](pitlane.md)|Pit events
-5|2|[Link](5_2.md)|
 5|3|[Link](5_3.md)|
