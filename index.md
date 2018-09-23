@@ -38,7 +38,7 @@ Track path length|2|Integer|
 Track path|variable|String|Full path to the track file
 Unknown|1|Integer|
 Session Info|1|Integer|
-Unknwon|67|Bytes|Unknown chunk of data
+Unknown|67|Bytes|Unknown chunk of data
 
 **Session Info**
 * Session Type = session_info & 0xF
