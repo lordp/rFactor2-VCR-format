@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Countdown Period
+### Countdown Period (Class 3, Type 9)
 
 Size|Type|Comment
 -|-|-
