@@ -2,4 +2,8 @@
 
 ### Return to garage (Class 3 Type 15)
 
-I believe this is when a driver presses ESC to return to the garage. The data with the event is 5 bytes long, content is unknown.
+I believe this is when a driver presses ESC to return to the garage.
+
+Size|Type|Comment
+-|-|-
+5|Unknown|
