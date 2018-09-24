@@ -132,7 +132,7 @@ Class|Type|Link|Comment
 2|17|[Link](incidents.md)|Incidents - collisions with cars, signs, posts, wheels, etc
 2|23|[Link](engine_damage.md)|Engine damage events
 2|26|[Link](suspension_damage.md)|Suspension damage events
-2|28|[Link](2_28.md)|
+2|28|[Link](cut_or_extension.md)|Corner cut or track extension events
 2|29|[Link](sector_1.md)|Sector 1 events
 2|30|[Link](sector_2.md)|Sector 2 events
 2|31|[Link](sector_3.md)|Sector 3 events
