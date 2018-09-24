@@ -110,7 +110,6 @@ Class|Type|Link|Comment
 2|8|[Link](penalty_removed.md)|Admin removed a penalty from a driver
 2|19|[Link](session_type.md)|Session type (race, qualifying, etc)
 3|6|[Link](checkpoint.md)|Checkpoint event - usually when a sector is completed
-3|5|[Link](rank_event.md)|Rank event
 3|9|[Link](countdown_period.md)|When the countdown begins and ends
 3|48|[Link](overtake.md)|Driver Overtake
 5|2|[Link](pit_events.md)|Pit lane/garage events
@@ -137,6 +136,7 @@ Class|Type|Link|Comment
 2|29|[Link](sector_1.md)|Sector 1 events
 2|30|[Link](sector_2.md)|Sector 2 events
 2|31|[Link](sector_3.md)|Sector 3 events
+3|5|[Link](rank_event.md)|Rank event
 3|8|[Link](3_8.md)|
 3|15|[Link](return_to_garage.md)|Driver pressed ESC
 3|16|[Link](3_16.md)|
