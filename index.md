@@ -121,8 +121,8 @@ Class|Type|Link|Comment
 -|-|-|-
 0|1|[Link](0_1.md)|
 0|3|[Link](0_3.md)|
-0|4|[Link](0_4.md)|
-0|5|[Link](0_5.md)|Related to engine damage events
+0|4|[Link](impacts.md)|Impacts with walls or cars
+0|5|[Link](loss_of_wheel.md)|Wheels removed from car
 1|4|[Link](1_4.md)|
 1|6|[Link](1_6.md)|
 1|11|[Link](1_11.md)|Same as 2-17 I think
