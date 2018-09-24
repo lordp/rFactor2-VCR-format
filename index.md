@@ -126,7 +126,7 @@ Class|Type|Link|Comment
 1|4|[Link](1_4.md)|
 1|6|[Link](car_contacts.md)|Contacts between cars
 1|11|[Link](1_11.md)|Same as 2-17 I think
-1|26|[Link](1_26.md)|
+1|26|[Link](drs.md)|Something to do with passing a DRS line
 2|9|[Link](2_9.md)|
 2|15|[Link](2_15.md)|
 2|16|[Link](2_16.md)|
