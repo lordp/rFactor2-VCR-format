@@ -1,2 +1,3 @@
 # remote_theme: yous/whiteglass
-remote_theme: mmistakes/jekyll-theme-basically-basic
+# remote_theme: mmistakes/jekyll-theme-basically-basic
+remote_theme: CloudCannon/aviator-jekyll-template
