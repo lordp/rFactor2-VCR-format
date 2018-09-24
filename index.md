@@ -124,7 +124,7 @@ Class|Type|Link|Comment
 0|4|[Link](impacts.md)|Impacts with walls or cars
 0|5|[Link](loss_of_wheel.md)|Wheels removed from car
 1|4|[Link](1_4.md)|
-1|6|[Link](1_6.md)|
+1|6|[Link](car_contacts.md)|Contacts between cars
 1|11|[Link](1_11.md)|Same as 2-17 I think
 1|26|[Link](1_26.md)|
 2|9|[Link](2_9.md)|
