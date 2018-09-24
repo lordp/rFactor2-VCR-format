@@ -1,4 +1,4 @@
-## rFactor 2 VCR (replay) file format
+# rFactor 2 VCR (replay) file format
 
 This is an attempt to document the file format of the rFactor 2 replay files (.vcr). The basis for this is Gerald Jacobson's [wiki](http://rf2-vcr-replay-format.wikia.com/wiki/RF2_VCR_Replay_Format_Wiki) and rf2ReplayOffice application source code.
 
