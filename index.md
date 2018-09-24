@@ -41,8 +41,10 @@ Session Info|1|Integer|
 Unknown|67|Bytes|Unknown chunk of data
 
 **Session Info**
-* Session Type = session_info & 0xF
-* Private Session = session_info >> 7 & 1
+```python
+session_type = session_info & 0xF
+private_session = session_info >> 7 & 1
+```
 
 ### Driver list
 
