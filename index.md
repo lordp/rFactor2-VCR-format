@@ -165,5 +165,5 @@ Class|Type|Link|Comment
 3|19|[Link](3_19.md)|
 3|22|[Link](formation.md)|Formation lap
 3|38|[Link](3_38.md)|
-3|49|[Link](pitlane.md)|Pit events
+3|49|[Link](pitlane_or_garage.md)|Pit events
 5|3|[Link](5_3.md)|
