@@ -4,4 +4,4 @@
 
 Size|Type|Comment
 -|-|-
-Event size|String|Session type
+Event size|String|Session type - 'Race', 'Qualifying', etc
