@@ -84,7 +84,7 @@ class VCRReader:
 
         self.checkpoints = {}
 
-        self.unknown_data = []
+        self.unknown_data = {}
         self.unknown_filenames = set()
 
         unknown_data_directory = Path(target)
@@ -202,16 +202,12 @@ class VCRReader:
         # checkpoints[driver_id].add((round(x, 3), round(y, 3), round(z, 3), slice_time))
 
     def dump(self):
-        files = {k: open(f'{self.target}/{k}.csv', 'w+', newline='') for k in self.unknown_filenames}
-
-        for row in self.unknown_data:
-            if row[1] > 0:
-                csv_data = csv.writer(files[f'{row[2]}_{row[3]}'])
-                csv_data.writerow(row)
-
-        for k in self.unknown_filenames:
-            if k in files:
-                files[k].close()
+        for c in self.unknown_data:
+            for t in self.unknown_data[c]:
+                print(f'Writing data for class {c}, type {t}')
+                with open(f'{self.target}/{c}_{t}.csv', 'w', newline='') as csv_file:
+                    csv_writer = csv.writer(csv_file)
+                    csv_writer.writerows(self.unknown_data[c][t])
 
     def read_drivers(self):
         number_of_drivers = self.read_integer()
@@ -238,6 +234,20 @@ class VCRReader:
         self.private_session = True if session_info >> 7 & 1 else False
         # log_file.write(f"Session Type: {session_types.get(session_info & 0xF)}\n")
         # log_file.write(f"Private Session: {True if session_info >> 7 & 1 else False}\n")
+
+    def store_data(self, slice_time, event_size, event_class, event_type, event_driver, file_pos):
+        if event_class not in self.unknown_data:
+            self.unknown_data[event_class] = {}
+
+        if event_type not in self.unknown_data[event_class]:
+            self.unknown_data[event_class][event_type] = []
+
+        data = self.vcr_file.read(event_size)
+        self.unknown_data[event_class][event_type].append(
+            [slice_time, event_size, event_class, event_type, event_driver, data]
+        )
+
+        self.vcr_file.seek(file_pos)
 
     def parse(self):
         self.vcr_file.seek(0)
@@ -305,10 +315,7 @@ class VCRReader:
                 if event_driver in self.drivers:
                     driver_name = self.drivers[event_driver].driver_name()
 
-                data = self.vcr_file.read(event_size)
-                self.unknown_data.append([slice_time, event_size, event_class, event_type, event_driver, data])
-                self.unknown_filenames.add(f'{event_class}_{event_type}')
-                self.vcr_file.seek(current_file_pos)
+                self.store_data(slice_time, event_size, event_class, event_type, event_driver, current_file_pos)
 
                 if event_class == 0 and event_type >= 7 and event_type <= 16:
                     # debug("Not Driver", event_size, event_type, event_class, event_driver, current_file_pos)
@@ -390,7 +397,6 @@ class VCRReader:
                     diff = self.vcr_file.tell() - next_file_pos
                     self.debug("ERROR!", event_size, event_type, event_class, event_driver, diff)
                     self.vcr_file.seek(next_file_pos)
-                    exit()
 
 
 reader = VCRReader(sys.argv[1], sys.argv[2])
