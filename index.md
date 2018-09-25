@@ -42,8 +42,27 @@ Unknown|67|Bytes|Unknown chunk of data
 
 **Session Info**
 ```python
+session_info = 10 # example - session type is race, private session is False
+
 session_type = session_info & 0xF
 private_session = session_info >> 7 & 1
+
+session_types = {
+    0: 'Test Day',
+    1: 'Practice',
+    2: 'Practice',
+    3: 'Practice',
+    4: 'Practice',
+    5: 'Qualifying',
+    6: 'Qualifying',
+    7: 'Qualifying',
+    8: 'Qualifying',
+    9: 'Warmup',
+    10: 'Race',
+    11: 'Race',
+    12: 'Race',
+    13: 'Race',
+}
 ```
 
 ### Driver list
@@ -93,6 +112,8 @@ Event count|4|Unsigned Integer|Number of events in this slice
 Each slice then has a number of events of variable size, with an unsigned integer header at the start that describes the content and size. This header is decoded as follows:
 
 ```python
+header = 84950786 # example - size = 63, class = 0, type = 8, driver = 2 
+
 event_size = (header >> 8) & 0x1ff
 event_class = (header >> 29)
 event_type = (header >> 17) & 0x3f
