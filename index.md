@@ -162,8 +162,6 @@ Class|Type|Link|Comment
 3|6|[Link](3_6.md)|
 3|8|[Link](3_8.md)|
 3|15|[Link](return_to_garage.md)|Driver pressed ESC
-3|16|[Link](3_16.md)|
-3|18|[Link](3_18.md)|
 3|19|[Link](3_19.md)|
 3|22|[Link](formation.md)|Formation lap
 3|38|[Link](3_38.md)|
