@@ -159,7 +159,7 @@ Class|Type|Link|Comment
 2|29|[Link](sector_1.md)|Sector 1 events
 2|30|[Link](sector_2.md)|Sector 2 events
 2|31|[Link](sector_3.md)|Sector 3 events
-3|5|[Link](3_5.md)|
+3|6|[Link](3_6.md)|
 3|8|[Link](3_8.md)|
 3|15|[Link](return_to_garage.md)|Driver pressed ESC
 3|16|[Link](3_16.md)|
