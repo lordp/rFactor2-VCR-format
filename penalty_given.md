@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Penalty Given
+### Penalty Given (Class 2, Type 5)
 
 Size|Type|Comment
 -|-|-

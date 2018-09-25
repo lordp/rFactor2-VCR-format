@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Engine Damage
+### Engine Damage (Class 2, Type 23)
 
 Size|Type|Comment
 -|-|-

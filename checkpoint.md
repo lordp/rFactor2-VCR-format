@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Checkpoint
+### Checkpoint (Class 3, Type 6)
 
 Size|Type|Comment
 -|-|-

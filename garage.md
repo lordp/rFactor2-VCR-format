@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Garage
+### Garage (Class 1, Type 7)
 
 Size|Type|Comment
 -|-|-

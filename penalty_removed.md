@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Penalty Removed by Admin
+### Penalty Removed by Admin (Class 2, Type 8)
 
 Size|Type|Comment
 -|-|-

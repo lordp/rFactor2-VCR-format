@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Lights
+### Lights (Class 1, Type 10)
 
 Size|Type|Comment
 -|-|-

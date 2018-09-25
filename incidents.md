@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Incidents
+### Incidents (Class 2, Type 17)
 
 Size|Type|Comment
 -|-|-

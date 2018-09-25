@@ -1,6 +1,6 @@
 [Back to index](index.md)
 
-### Suspension Damage
+### Suspension Damage (Class 2, Type 26)
 
 Size|Type|Comment
 -|-|-
