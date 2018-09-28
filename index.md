@@ -151,7 +151,7 @@ Class|Type|Link|Comment
 1|26|[Link](drs.md)|Something to do with passing a DRS line
 2|9|[Link](2_9.md)|
 2|15|[Link](2_15.md)|
-2|16|[Link](2_16.md)|
+2|16|[Link](tyre_compounds.md)|
 2|17|[Link](incidents.md)|Incidents - collisions with cars, signs, posts, wheels, etc
 2|23|[Link](engine_damage.md)|Engine damage events
 2|26|[Link](suspension_damage.md)|Suspension damage events
