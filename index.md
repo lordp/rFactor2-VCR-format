@@ -120,6 +120,8 @@ event_type = (header >> 17) & 0x3f
 event_driver = header & 0xff
 ```
 
+After the header, there is a single byte between it and the event details. It is currently unknown what this byte is for.
+
 What follows is what Gerald and I have figured out of the format, organised into class and type.
 
 Class|Type|Link|Comment
