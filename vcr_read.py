@@ -5,6 +5,7 @@ from struct import unpack
 from pprint import pprint
 import json
 import csv
+import gzip
 
 
 class Driver:
@@ -38,6 +39,13 @@ class VCRReader:
         self.target = target
 
         self.vcr_file = open(self.filename, 'rb')
+
+        # read the first two bytes, if they match the gzip magic number, re-open as a gzip file
+        gz_header = b"\x1f\x8b"
+        gz = self.vcr_file.read(2)
+        if gz == gz_header:
+            self.vcr_file.close()
+            self.vcr_file = gzip.open(self.filename, 'rb')
 
         self.drivers = {}
         self.session_types = {
